@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #96ac31;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        section {
+            padding: 20px;
+        }
+        .stream {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .stream iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Entre em Contato</h2>
+        <div class="contact-info">
+            <p>CAHSTREAMER@GMAIL.COM</p>
+            <p>Telefone: (11) 99999-9999</p>
+            <p>Endereço: Rua cah streamer, 123, São Paulo, SP</p>
+        
+        <form action="send_message.php" method="post">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h1>Acesse nossas Redes sociais através!</h1>
+    <p>Para saber mais, visite meu instagram  <a href="https://www.exemplo.com" target="_blank">instagram.com-CAHSTREAMER</a>.</p>
+    <p>Para saber mais, visite meu facebook  <a href="https://www.exemplo.com" target="_blank">facebook.com-CAHSTREAMER</a>.</p>
+    <p>Para saber mais, visite meu linkedin  <a href="https://www.exemplo.com" target="_blank">linkedin.com-CAHSTREAMER</a>.</p>
+    <p>Para saber mais, visite meu cal youtube  <a href="https://www.exemplo.com" target="_blank">youtube.com-CAHSTREAMER</a>.</p>
+        </a>
+    </div>
+</body>
+</html>

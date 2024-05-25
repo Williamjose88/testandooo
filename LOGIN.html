@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #96ac31;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        section {
+            padding: 20px;
+        }
+        .stream {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .stream iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+    </style>
+
+    
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tablink" onclick="openTab(event, 'Login')">Login</button>
+            <button class="tablink" onclick="openTab(event, 'Cadastro')">Cadastro</button>
+        </div>
+        
+        <div id="Login" class="tabcontent">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <label for="login-username">Usuário</label>
+                <input type="text" id="login-username" name="username" required>
+                
+                <label for="login-password">Senha</label>
+                <input type="password" id="login-password" name="password" required>
+                
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+        
+        <div id="Cadastro" class="tabcontent">
+            <h2>Cadastro</h2>
+            <form action="register.php" method="post">
+                <label for="register-username">Usuário</label>
+                <input type="text" id="register-username" name="username" required>
+                
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" name="email" required>
+                
+                <label for="register-password">Senha</label>
+                <input type="password" id="register-password" name="password" required>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
